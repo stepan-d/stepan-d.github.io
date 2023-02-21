@@ -119,19 +119,15 @@
         font-size: 1.6em;
         margin-left: 6vh;
     }
-    header h1 {
+    .header-con h1 {
         position: absolute;
-        margin-top: 290px;
+        bottom: 36%;
         font-size:4em;
 
     }
-    nav ul li {
-        width: 120px;
-        text-align: center;
-        margin: 0 auto;
-    }
     /***** NAV-BAR *****/
     nav {
+        position: absolute;
         margin-right: 0;
         margin-top: 0;
         background-color: #163c40d0;
@@ -146,7 +142,10 @@
 
     }
     nav ul li {
-        padding-left: 2vw;
+        padding-left: 1.5vw;
+        width: 120px;
+        text-align: center;
+        margin: 0 0;
     }
     nav ul li:nth-child(4) {
         width: 80%;
@@ -154,6 +153,10 @@
     }
     nav ul li:nth-child(1) {
         margin-left: 0vw;
+    }
+    nav ul li a:hover,
+    nav ul li a:active {
+        font-size: 1.4em;
     }
     /*=== O MNĚ ===*/
     .o-mne-nazev {
