@@ -121,7 +121,7 @@
     }
     header h1 {
         position: absolute;
-        top: 310px;
+        margin-top: 100%;
         font-size:4em;
 
     }
