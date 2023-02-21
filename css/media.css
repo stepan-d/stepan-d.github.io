@@ -40,8 +40,10 @@
         "tri ctyri"
         "pet sest";
     }
-
-
+    /*=== PROJEKTY ===*/
+    #projekty p {
+        font-size: 1.5em;
+    }
     /*=== KONTAKT ===*/
     .kontakt-con {
         flex-wrap: wrap;
@@ -82,6 +84,7 @@
     }
     .o-mne-popis {
         margin-top: 35px;
+        font-size: 1.2em;
     }
     /*=== PROJEKTY ===*/
     .projekty-con {
@@ -90,7 +93,7 @@
     .barber, .rice, .sonoma { 
         flex-direction: row;
         display: flex;
-        height: 37vw; 
+        height: 33.33vh; 
         width: 100%; 
     }
     .projekty-text {
@@ -128,6 +131,7 @@
     /***** NAV-BAR *****/
     nav {
         position: absolute;
+        width: 100%;
         margin-right: 0;
         margin-top: 0;
         background-color: #163c40d0;
@@ -161,19 +165,23 @@
     /*=== O MNĚ ===*/
     .o-mne-nazev {
         top: 3vh;
+        font-size: 3em;
     }
     .o-mne-popis {
         padding-top: 10px;
-
+        font-size: 1.3em;
     }
     .grid-o-mne-con {
         margin-top: 0vh;
     }
     /*=== PROJEKTY ===*/
     .barber, .rice, .sonoma { 
-        height: 30vh; 
+        height: 33.33vh; 
     }
     /*=== SLUŽBY ===*/
+    .sluzby-icon {
+        padding: 4px 13px;
+    }
     .grid-sluzby-con {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 1fr);
@@ -186,11 +194,18 @@
     .grid-sluzby-5 { display: none;   }
     .grid-sluzby-6 { display: none;   }
     /*=== KONTAKT ===*/
+    .kontakt-inf h2 {
+        font-size: 3em;
+        margin-top: 5vh;
+    }
     .form h2 {
         font-size: 1.5em;
 
     }
     /*=== FOOTER ===*/
+    footer {
+        height: 15vh;
+    }
     footer p:nth-child(2) {
         display: none;
     }
