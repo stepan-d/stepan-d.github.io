@@ -1,0 +1,333 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/***** REUSABLE *****/
+    body {
+        background-color: #163C40;
+    }
+    .text-18 {
+        color: #FEFBE9;
+        font-size: 1.2em;
+    }
+    .nadpisy {
+        color: #FEFBE9;
+        font-size: 6em;
+    }
+
+
+/*=== HEADER ===================================================================*/
+header {
+    background: linear-gradient(#163c4099,#163c40b3), url("../img/pc-setup.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.header-con {
+    display: flex;
+}
+
+/***** TEXT *****/
+    header h1 {
+        position: absolute;
+        font-size: 10vw;
+        font-weight: bold;
+        color: #FEFBE9;
+        margin-top: 6vh;
+        margin-left: 2vw;
+        z-index: 1;
+    }
+    header p {
+        position: absolute;
+        top: 80vh;
+        margin-left: 8vw;
+        width: 65vw;
+        color: #FEFBE9;
+        font-size: 2em;
+        font-weight: bold;
+    }
+/***** NAV-BAR *****/
+    nav {
+        flex: 1;
+        margin-top: 6vh;
+        margin-right: 3vw;
+        z-index: 2;
+        align-items: center;
+    }
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        flex-wrap: wrap;
+    }
+    nav ul li {
+        width: 145px;
+        list-style: none;
+        margin-left: 1vw;
+        text-align: center;
+    }
+    nav ul li:nth-child(4)/*Button*/{
+        padding: 6px 15px;
+        background-color: #F0A04B;
+        border-radius: 20px;
+        margin-top: -1vh;
+    }
+    nav ul li a:link,
+    nav ul li a:visited {
+        transition: 0.25s;
+        font-size: 1.4em;
+        color: #FEFBE9;
+        text-decoration: none;
+
+    }
+    nav ul li a:hover,
+    nav ul li a:active {
+        color: #FEFBE9;
+        font-size: 1.5em;
+        font-weight: bold;
+
+    }
+    #kontakt-btn {
+        font-weight: bold;
+    }
+
+
+/*=== MAIN =====================================================================*/
+
+
+/*============ O MNĚ =============*/
+.o-mne-nazev {
+    position: relative;
+    margin-left:4.5vw;
+    top: 15vh;
+    font-weight: bold;
+}
+
+.o-mne-popis {
+    color: #FEFBE9;
+    font-size: 2em;
+    border-top: 2px solid #FEFBE9;
+    padding-top: 10px;
+    margin-top: 35px;
+}
+
+.o-mne-nadpis {
+    color: #FEFBE9;
+    font-size: 1.35em;
+    font-weight: bold;
+    padding-bottom: 1vh;
+}
+
+.o-mne-text {
+    border-top: 2px solid #FEFBE9;
+    padding-top: 1vh;
+}
+
+/***** GRID 1 *****/
+    .grid-o-mne-con {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-gap: 6vw;
+        grid-row-gap: 4vh;
+        grid-template-areas: 
+        "omne profesionalni unikatni"
+        "omne responzivni individualni";
+        margin: 10vh 5vw 30vh 5vw;
+    }
+    .grid-o-mne-1 { grid-area: omne;         }
+    .grid-o-mne-2 { grid-area: profesionalni;}
+    .grid-o-mne-3 { grid-area: unikatni;     }
+    .grid-o-mne-4 { grid-area: responzivni;  }
+    .grid-o-mne-5 { grid-area: individualni; }
+
+
+/*======== PROJEKTY =========*/
+.projekty-con {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    flex-direction: row;
+}
+
+.barber, .rice, .sonoma { 
+    width: 33.33%; 
+    height: 100vh; 
+    align-items: center; 
+}
+.barber {background-color: #FEFBE9; }
+.rice { background-color: #E1EEDD;  }
+.sonoma { background-color: #F0A04B;}
+
+
+/***** OBSAH *****/
+    #projekty img {
+        display: block;
+        max-width: 90%;
+        max-height: 70%;
+        margin: 4vh auto 1vh auto;
+    }
+    #projekty h2 {
+        display: inline-block;
+        font-size: 3em;
+        margin-left: 2.5vw;
+        color: #163C40;
+        border-bottom: 5px solid #163C40;
+    }
+    #projekty p {
+        margin: 1vh 2.5vw 4vh 2.5vw;
+        color: #163C40;
+    }
+
+/*========== SLUŽBY ===========*/
+.sluzby-nadpis {
+    padding-top: 10vh;
+    text-align: center;
+}
+
+.grid-sluzby p {
+    border-top: 2px solid #FEFBE9;
+    padding-top: 10px;
+}
+
+.sluzby-icon {
+    color: #FEFBE9;
+    font-size: 2em;
+    font-weight: bold;
+    display: inline-block;
+    padding: 4px 15px;
+    border-radius: 50%;
+    margin-bottom: 2vh;
+    border: 5px dashed #FEFBE9;
+}
+/***** GRID 2 *****/
+    .grid-sluzby-con {
+        display: grid;
+        margin: 5vh 10vw 15vh 10vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        column-gap: 2vw;
+        row-gap: 4vh;
+        grid-template-areas: 
+        "jedna dva tri"
+        "ctyri pet sest";
+    }
+    .grid-sluzby-1 { grid-area: jedna; }
+    .grid-sluzby-2 { grid-area: dva;   }
+    .grid-sluzby-3 { grid-area: tri; }
+    .grid-sluzby-4 { grid-area: ctyri; }
+    .grid-sluzby-5 { grid-area: pet;   }
+    .grid-sluzby-6 { grid-area: sest;  }
+
+/*=========== KONTAKT =============*/
+#kontakt {
+    border-left: 3px solid #FEFBE9;
+    border-right: 3px solid #FEFBE9;
+}
+
+.kontakt-con {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.kontakt-inf h2 {
+    display: inline-block;
+    padding: 0;
+    border-bottom: 2px solid #FEFBE9;
+}
+
+.kontakt-inf p {
+    color: #FEFBE9;
+    text-decoration: none;
+    margin: 10vh auto;
+}
+
+.kontakt-inf p a {
+    text-decoration: none;
+}
+
+.kontakt-inf p img {
+    float: left;
+    width: 3vw;
+    margin-right: 1.5vw;
+    
+}
+
+.address { margin-top: 1vh; }
+.phone { margin-top: 0.5vh; }
+
+
+/***** FORMULÁŘ *****/
+    .form h2 {
+        color: #FEFBE9;
+        font-size: 2em;
+    }
+    .form input[type="text"], .form input[type="email"], textarea {
+        color: #FEFBE9;
+        font-size: 1.35em;
+        background: none;
+        display: block;
+        margin: 1.5vh auto;
+        padding: 5px 10px;
+        text-align: left;
+        border: 2px solid #FEFBE9;
+        border-radius: 0 0 10px 0;
+        width: 30vw;
+        outline: none;
+    }
+
+    .form input[type="text"]:focus, .form input[type="email"]:focus, .form textarea:focus {
+        transition: 0.25s;
+        border: 2px double #FEFBE9;
+        background-color: #fefbe920;
+    }
+
+    .form textarea {
+        color: #163C40;
+        background-color: #FEFBE9;
+    }
+    .form textarea:focus {
+        transition: 0.25s;
+        background-color: #dcd9c8;
+    }
+    .form input[type="submit"] {
+        color: #FEFBE9;
+        font-size: 1.35em;
+        font-weight: bold;
+        border: 0;
+        background-color: #F0A04B;
+        border: none;
+        text-align: center;
+        padding: 8px 20px;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+
+/*=== FOOTER ===================================================================*/
+footer {
+    height: 10vh;
+    background-color: #FEFBE9;
+    
+}
+footer p {
+    font-size: 1.35em;
+    color: #163C40;
+    float: left;
+    margin: auto 5%;
+    display: block;
+    margin-top: 3vh;
+}
+footer p:nth-child(2) {
+    float: right;
+}
+footer p a {
+    color: #FEFBE9;
+}

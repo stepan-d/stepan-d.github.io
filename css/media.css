@@ -1,0 +1,194 @@
+@media (max-width: 1125px){
+    /*=== O MNĚ ===*/
+    .o-mne-popis {
+        font-size: 1.5em;
+    }
+    .grid-o-mne-con {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1.5fr 1fr 1fr;
+        grid-column-gap: 4vw;
+        grid-row-gap: 4vh;
+        grid-template-areas: 
+        "omne omne"
+        "profesionalni unikatni"
+        "responzivni individualni";
+        margin: 10vh 5vw 10vh 5vw;
+    }
+    .grid-o-mne-1 { grid-area: omne;         }
+    .grid-o-mne-2 { grid-area: profesionalni;}
+    .grid-o-mne-3 { grid-area: unikatni;     }
+    .grid-o-mne-4 { grid-area: responzivni;  }
+    .grid-o-mne-5 { grid-area: individualni; }
+
+
+    /*=== SLUŽBY ===*/
+    .sluzby-nadpis {
+        font-size: 3em;
+    }
+    .grid-sluzby p {
+        font-size: 1em;
+    }
+    .sluzby-icon {
+        font-size: 1.5em;
+        padding: 0.2vh 1.4vw;
+    }
+    .grid-sluzby-con {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+        "jedna dva"
+        "tri ctyri"
+        "pet sest";
+    }
+
+
+    /*=== KONTAKT ===*/
+    .kontakt-con {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .kontakt-inf {
+        width: auto;
+        text-align: center;
+
+    }
+    .kontakt-inf p {
+        margin: 7vh auto;
+    }
+    .kontakt-inf p img {
+        float:none;
+        width: 3vw;
+        margin-right: 1vh;
+        
+    }
+    .kontakt-form {
+        width: auto;
+        margin: 4vh 5vw 10vh 4vw;
+    }
+    .form input[type="text"], .form input[type="email"], textarea {
+        width: 60vw;
+    }
+}
+
+
+@media (max-width: 920px) {
+    header h1 {
+        margin-top: 10vh;
+    }
+    /*=== O MNĚ ===*/
+    .o-mne-nazev {
+        top: 3vh;
+    }
+    .o-mne-popis {
+        margin-top: 35px;
+    }
+    /*=== PROJEKTY ===*/
+    .projekty-con {
+        flex-direction:column;
+    }
+    .barber, .rice, .sonoma { 
+        flex-direction: row;
+        display: flex;
+        height: 37vw; 
+        width: 100%; 
+    }
+    .projekty-text {
+        position: relative;
+        left: 25vw;
+        width: 73%;
+    }
+    #projekty img {
+        position: absolute;
+        float: left;
+        max-width: 20vw;
+        margin: auto 2vw;
+    }
+    #projekty h2 {
+        margin: auto 1vw;
+    }
+    #projekty p {
+        margin: 0.5vh 0.5vw 1vh 1vw;
+        font-size: 1.3em;
+    }
+}
+@media (max-width: 792px){
+    /*=== HEADER ===*/
+    header p {
+        top: 65vh;
+        font-size: 1.6em;
+        margin-left: 6vh;
+    }
+    header h1 {
+        position: absolute;
+        top: 310px;
+        font-size:4em;
+
+    }
+    nav ul li {
+        width: 120px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    /***** NAV-BAR *****/
+    nav {
+        margin-right: 0;
+        margin-top: 0;
+        background-color: #163c40d0;
+        justify-content: center;
+        padding: 3vh 0 1vh 0;
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+
+    }
+    nav ul li {
+        padding-left: 2vw;
+    }
+    nav ul li:nth-child(4) {
+        width: 80%;
+        margin: 2vh auto;
+    }
+    nav ul li:nth-child(1) {
+        margin-left: 0vw;
+    }
+    /*=== O MNĚ ===*/
+    .o-mne-nazev {
+        top: 3vh;
+    }
+    .o-mne-popis {
+        padding-top: 10px;
+
+    }
+    .grid-o-mne-con {
+        margin-top: 0vh;
+    }
+    /*=== PROJEKTY ===*/
+    .barber, .rice, .sonoma { 
+        height: 30vh; 
+    }
+    /*=== SLUŽBY ===*/
+    .grid-sluzby-con {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "jedna"
+        "dva"
+        "tri"
+        "ctyri";
+    }
+    .grid-sluzby-5 { display: none;   }
+    .grid-sluzby-6 { display: none;   }
+    /*=== KONTAKT ===*/
+    .form h2 {
+        font-size: 1.5em;
+
+    }
+    /*=== FOOTER ===*/
+    footer p:nth-child(2) {
+        display: none;
+    }
+}
