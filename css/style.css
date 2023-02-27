@@ -15,7 +15,7 @@
     }
     .nadpisy {
         color: #FEFBE9;
-        font-size: 6em;
+        font-size: 600%;
     }
 
 
@@ -23,7 +23,8 @@
 header {
     background: linear-gradient(#163c4099,#163c40b3), url("../img/pc-setup.jpg");
     background-size: cover;
-    height: 100vh;
+    height: 100svh;
+    background-attachment: fixed;
 }
 
 .header-con {
@@ -36,14 +37,14 @@ header {
         font-size: 10vw;
         font-weight: bold;
         color: #FEFBE9;
-        margin-top: 6vh;
-        margin-left: 2vw;
+        margin-top: 3%;
+        margin-left: 2%;
         z-index: 1;
     }
     header p {
         position: absolute;
-        top: 80vh;
-        margin-left: 8vw;
+        top: 80%;
+        margin-left: 8%;
         width: 65vw;
         color: #FEFBE9;
         font-size: 2em;
@@ -52,8 +53,8 @@ header {
 /***** NAV-BAR *****/
     nav {
         flex: 1;
-        margin-top: 6vh;
-        margin-right: 3vw;
+        margin-top: 3%;
+        margin-right: 3%;
         z-index: 2;
         align-items: center;
     }
@@ -65,14 +66,14 @@ header {
     nav ul li {
         width: 145px;
         list-style: none;
-        margin-left: 1vw;
+        margin-left: 1%;
         text-align: center;
     }
-    nav ul li:nth-child(4)/*Button*/{
+    nav ul #odkazy li:nth-child(5)/*Button*/{
         padding: 6px 15px;
         background-color: #F0A04B;
         border-radius: 20px;
-        margin-top: -1vh;
+        margin-top: -0.5%;
     }
     nav ul li a:link,
     nav ul li a:visited {
@@ -100,9 +101,8 @@ header {
 /*============ O MNĚ =============*/
 .o-mne-nazev {
     position: relative;
-    margin-left:4.5vw;
-    top: 15vh;
-    font-weight: bold;
+    top: 60px;
+    margin-bottom: 1%;
 }
 
 .o-mne-popis {
@@ -110,54 +110,52 @@ header {
     font-size: 2em;
     border-top: 2px solid #FEFBE9;
     padding-top: 10px;
-    margin-top: 35px;
+    margin-top: 27px;
 }
 
 .o-mne-nadpis {
     color: #FEFBE9;
     font-size: 1.35em;
     font-weight: bold;
-    padding-bottom: 1vh;
+    padding-bottom: 1%;
 }
 
 .o-mne-text {
     border-top: 2px solid #FEFBE9;
-    padding-top: 1vh;
+    padding-top: 1%;
 }
 
 /***** GRID 1 *****/
     .grid-o-mne-con {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-column-gap: 6vw;
-        grid-row-gap: 4vh;
+        grid-template-rows: 0.5fr 1fr 1fr;
+        grid-column-gap: 5%;
+        grid-row-gap: 5%;
+        justify-content: center;
         grid-template-areas: 
+        "nadpis none none"
         "omne profesionalni unikatni"
         "omne responzivni individualni";
-        margin: 10vh 5vw 30vh 5vw;
+        margin: 2% 5% 13% 5%;
     }
-    .grid-o-mne-1 { grid-area: omne;         }
-    .grid-o-mne-2 { grid-area: profesionalni;}
-    .grid-o-mne-3 { grid-area: unikatni;     }
-    .grid-o-mne-4 { grid-area: responzivni;  }
-    .grid-o-mne-5 { grid-area: individualni; }
+    .grid-o-mne-1 { grid-area: nadpis;       }
+    .grid-o-mne-2 { grid-area: omne;         }
+    .grid-o-mne-3 { grid-area: profesionalni;}
+    .grid-o-mne-4 { grid-area: unikatni;     }
+    .grid-o-mne-5 { grid-area: responzivni;  }
+    .grid-o-mne-6 { grid-area: individualni; }
 
 
 /*======== PROJEKTY =========*/
 .projekty-con {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 100%;
+    align-items: stretch;
     flex-direction: row;
 }
-
 .barber, .rice, .sonoma { 
-    width: 33.33%; 
-    height: 100vh; 
-    align-items: center; 
+    flex-shrink: 1;
 }
 .barber {background-color: #FEFBE9; }
 .rice { background-color: #E1EEDD;  }
@@ -169,23 +167,23 @@ header {
         display: block;
         max-width: 90%;
         max-height: 70%;
-        margin: 4vh auto 1vh auto;
+        margin: 5% auto 1% auto;
     }
     #projekty h2 {
         display: inline-block;
         font-size: 3em;
-        margin-left: 2.5vw;
+        margin-left: 4%;
         color: #163C40;
         border-bottom: 5px solid #163C40;
     }
     #projekty p {
-        margin: 1vh 2.5vw 4vh 2.5vw;
+        margin: 1% 4% 4% 4%;
         color: #163C40;
     }
 
 /*========== SLUŽBY ===========*/
 .sluzby-nadpis {
-    padding-top: 10vh;
+    padding-top: 3%;
     text-align: center;
 }
 
@@ -201,24 +199,24 @@ header {
     display: inline-block;
     padding: 4px 15px;
     border-radius: 50%;
-    margin-bottom: 2vh;
+    margin-bottom: 2%;
     border: 5px dashed #FEFBE9;
 }
 /***** GRID 2 *****/
     .grid-sluzby-con {
         display: grid;
-        margin: 5vh 10vw 15vh 10vw;
+        margin: 5% 10% 5% 10%;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        column-gap: 2vw;
-        row-gap: 4vh;
+        column-gap: 2%;
+        row-gap: 4%;
         grid-template-areas: 
         "jedna dva tri"
         "ctyri pet sest";
     }
     .grid-sluzby-1 { grid-area: jedna; }
     .grid-sluzby-2 { grid-area: dva;   }
-    .grid-sluzby-3 { grid-area: tri; }
+    .grid-sluzby-3 { grid-area: tri;   }
     .grid-sluzby-4 { grid-area: ctyri; }
     .grid-sluzby-5 { grid-area: pet;   }
     .grid-sluzby-6 { grid-area: sest;  }
@@ -228,58 +226,58 @@ header {
     border-left: 3px solid #FEFBE9;
     border-right: 3px solid #FEFBE9;
 }
-
 .kontakt-con {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
-    min-height: 100vh;
+    justify-content:space-evenly;
+    align-items: baseline;
+    padding: 10% 0;
 }
-
+.kontakt-inf {
+    width: 30%;
+    margin-left: 5%;
+}
 .kontakt-inf h2 {
     display: inline-block;
-    padding: 0;
     border-bottom: 2px solid #FEFBE9;
+    margin-bottom: 10%;
 }
-
 .kontakt-inf p {
-    color: #FEFBE9;
     text-decoration: none;
-    margin: 10vh auto;
+    margin-bottom: 10%;
 }
-
 .kontakt-inf p a {
     text-decoration: none;
 }
-
-.kontakt-inf p img {
+.kontakt-inf img {
+    top: 26px;
+    width: 6%;
+    margin-right: 2%;
     float: left;
-    width: 3vw;
-    margin-right: 1.5vw;
-    
 }
-
-.address { margin-top: 1vh; }
-.phone { margin-top: 0.5vh; }
-
-
+.kontakt-inf img:nth-child(1) {
+    margin-bottom: 10px;
+}
+.kontakt-form {
+    width: 500px;
+    margin-right: 5%;
+}
 /***** FORMULÁŘ *****/
     .form h2 {
         color: #FEFBE9;
-        font-size: 2em;
+        font-size: 200%;
     }
     .form input[type="text"], .form input[type="email"], textarea {
         color: #FEFBE9;
         font-size: 1.35em;
         background: none;
         display: block;
-        margin: 1.5vh auto;
-        padding: 5px 10px;
+        margin: 2% 0 2% auto;
+        padding: 5px 4px;
         text-align: left;
         border: 2px solid #FEFBE9;
         border-radius: 0 0 10px 0;
-        width: 30vw;
+        width: 100%;
         outline: none;
     }
 
@@ -298,6 +296,7 @@ header {
         background-color: #dcd9c8;
     }
     .form input[type="submit"] {
+        display: block;
         color: #FEFBE9;
         font-size: 1.35em;
         font-weight: bold;
@@ -313,9 +312,8 @@ header {
 
 /*=== FOOTER ===================================================================*/
 footer {
-    height: 10vh;
+    height: 10svh;
     background-color: #FEFBE9;
-    
 }
 footer p {
     font-size: 1.35em;
@@ -323,7 +321,7 @@ footer p {
     float: left;
     margin: auto 5%;
     display: block;
-    margin-top: 3vh;
+    margin-top: 1.5%;
 }
 footer p:nth-child(2) {
     float: right;

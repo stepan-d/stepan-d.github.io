@@ -1,92 +1,28 @@
-@media (max-width: 850px){
-    /*=== FOOTER ===*/
-    header h1 {
-        margin-top: 35vh;
+@media (max-width: 1150px) {
+    .kontakt-inf {
+    width: 50%;
+}
+}
+@media (max-width: 965px) {
+    /*======== FOOTER =========*/
+    footer p {
+        margin-top: 3%;
+    }
+}
+@media (max-width: 845px) {
 
-    }
-    header p {
-        display: block;
-        max-width: 70vw;
-    }
-    nav {
-        margin-right: 0;
-        margin-top: 0;
-        background-color: #163c40d0;
-        justify-content: center;
-        padding: 4vh 0 4vh 0;
-    }
-    nav ul {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-    nav ul li {
-        margin-left: 10vw;
-    }
-    nav ul li:nth-child(1) {
-        margin-left: 0vw;
-    }
-    /*=== O MNĚ ===*/
-    #o-mne {
-        min-height: 100vh;
-    }
-    .o-mne-nazev {
-        top: 13vh;
-    }
-    .o-mne-text {
-        font-size: 1.2em;
-    }
-    .grid-o-mne-con {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 2fr 1fr 1 1fr;
-        grid-column-gap: 6vw;
-        grid-row-gap: 4vh;
-        grid-template-areas:
-        "omne omne"
-        "omne omne"
-        "profesionalni unikatni"
-        "responzivni individualni";
-        margin: 10vh 5vw 10vh 5vw;
-    }
-    .grid-o-mne-1 { grid-area: omne;         }
-    .grid-o-mne-2 { grid-area: profesionalni;}
-    .grid-o-mne-3 { grid-area: unikatni;     }
-    .grid-o-mne-4 { grid-area: responzivni;  }
-    .grid-o-mne-5 { grid-area: individualni; }
-    /*=== PROJEKTY ===*/
-    .projekty-con {
-        min-height: 80vh;
-    }
-    .sonoma {
-        display: none;
-    }
-    .rice, .barber {
-         width: 50vw;
-         height: auto;
-
-         
-    }
-    #projekty img {
-        width: 40vh;
-    }
-    #projekty h2 {
-        margin-top: 1vh;
-    }
-    #projekty p {
-        font-size: 1.5em;
-    }
-    /*=== SLUŽBY ===*/
-    .grid-sluzby-con {
-        margin: 0 10vw 10vh 10vw;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-        "jedna dva"
-        "tri ctyri";
-    }
-    .grid-sluzby-5 { display: none;    }
-    .grid-sluzby-6 { display: none;    }
-    /*=== FOOTER ===*/
+    /*======== FOOTER =========*/
     footer p:nth-child(2) {
         display: none;
+    }
+}
+
+@media (max-width: 685px) {
+    /*======== FOOTER =========*/
+    footer {
+        min-height: 80px;
+    }
+    footer p {
+        margin: 3%;
     }
 }

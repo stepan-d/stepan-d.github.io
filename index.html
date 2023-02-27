@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
     <link rel="icon" type="image/x-icon" href="/img/favicon.png">
@@ -14,38 +15,57 @@
         <div class="header-con">
             <nav>
                 <ul>
-                    <li><a href="#o-mne">O MNĚ</a></li>
-                    <li><a href="#projekty">PROJEKTY</a></li>
-                    <li><a href="#sluzby">SLUŽBY</a></li>
-                    <li href="#kontakt"><a href="#kontakt" id="kontakt-btn">KONTAKT</a></li>
+                    <div id="odkazy">
+                        <li><a href="#o-mne">O MNĚ</a></li>
+                        <li><a href="#projekty">PROJEKTY</a></li>
+                        <li><a href="#sluzby">SLUŽBY</a></li>
+                        <li><a href="#kontakt" id="kontakt-btn">KONTAKT</a></li>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                    </a>
                 </ul>
             </nav>
             <h1>&lt;Štěpán<br>&nbsp;&nbsp;Dudycha&sol;&gt;</h1>
             <p id="header-popis">Pomohu Vám vytvořit moderní a unikátní webové stránky, které osloví Vaše zákazníky!</p>
+
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("odkazy");
+                  if (x.style.display === "block") {
+                    x.style.display = "none";
+                  } else {
+                    x.style.display = "block";
+                  }
+                }
+                </script>
         </div>
     </header>
 
     <main>
 
-        <section id="o-mne"">
-            <h2 class="o-mne-nazev nadpisy">O mně</h2>
+        <section id="o-mne">
+            
             <div class="grid-o-mne-con">
                 <div class="grid-o-mne-1">
+                    <h2 class="o-mne-nazev nadpisy">O mně</h2>
+                </div>
+                <div class="grid-o-mne-2">
                     <p class="o-mne-popis">Tvorba webu je pro mě uměním a každý projekt pro mě znamená novou výzvu. Snažím se vytvořit unikátní a moderní design, který odpovídá potřebám zákazníka a zároveň je přitažlivý pro jeho návštěvníky. Neustále sleduji nejnovější trendy a zlepšuji své schopnosti. Moc mě těší, když vidím, že moje práce pomáhá lidem a jejich podnikání.</p>
                 </div>
-                <div class="grid-o-mne grid-o-mne-2">
+                <div class="grid-o-mne grid-o-mne-3">
                     <h2 class="o-mne-nadpis">Profesionální přístup</h2>
                     <p class="o-mne-text text-18">Jako webový designér dokážu vytvořit estetický příjemný a funkční web, který bude reprezentovat Vaši firmu.</p>
                 </div>
-                <div class="grid-o-mne grid-o-mne-3">
+                <div class="grid-o-mne grid-o-mne-4">
                     <h2 class="o-mne-nadpis">Unikátní design</h2>
                     <p class="o-mne-text text-18">Nabízím originální a moderní design, který bude odpovídat vašim potřebám a zároveň bude přitažlivý pro vaše návštěvníky.</p>
                 </div>
-                <div class="grid-o-mne grid-o-mne-4">
+                <div class="grid-o-mne grid-o-mne-5">
                     <h2 class="o-mne-nadpis">Responzivní design </h2>
                     <p class="o-mne-text text-18">Věnuji se tvorbě webů, které jsou přizpůsobené pro různá zařízení a velikosti obrazovek. Od telefonů až po počítače.</p>
                 </div>
-                <div class="ggrid-o-mne rid-o-mne-5">
+                <div class="ggrid-o-mne grid-o-mne-6">
                     <h2 class="o-mne-nadpis">Individuální přístup</h2>
                     <p class="o-mne-text text-18">Spolupracuji s Vámi na tvorbě Vašeho webu a snažím se přizpůsobit se Vašim představám a požadavkům.</p>
                 </div>
@@ -65,7 +85,7 @@
                     <img src="img/rice.png" alt="rice-web">
                     <div class="projekty-text">
                         <h2>Ricey Silo</h2>
-                    <p class="text-18">Zabývají se výrobou obilného zrna. Jsou zde prezentovány sila pro ukládání zrna, zpracování potravin a další technologie.</p>
+                        <p class="text-18">Zabývají se výrobou obilného zrna. Jsou zde prezentovány sila pro ukládání zrna, zpracování potravin a další technologie.</p>
                     </div>
                 </div>
                 <div class="sonoma">
@@ -112,18 +132,18 @@
             <div class="kontakt-con">
                 <div class="kontakt-inf">
                     <h2 class="nadpisy">kontakt</h2>
-                    <p><a class="text-18" href="https://www.google.com/maps/place/t%C5%99.+M%C3%ADru,+530+02+Pardubice+I/@50.0369255,15.7718329,17z/data=!3m1!4b1!4m6!3m5!1s0x470dcc94b922296f:0xb398a40fa4251acb!8m2!3d50.0369221!4d15.7740216!16s%2Fg%2F1tnmqfg9" target="_blank"><img class="address" src="img/adresa.png" alt="">Štěpán Dudycha<br>Třída Míru 1<br>530 02 Pardubice I</a></p>
+                    <p><a class="text-18" href="https://goo.gl/maps/9ZAtFgLyiPtk4V2k9" target="_blank"><img class="address" src="img/adresa.png" alt="">Štěpán Dudycha<br>Třída Míru 1<br>530 02 Pardubice I</a></p>
                     <p class="text-18"><img class="phone" src="img/telefon.png" alt="">Telefon:<br>+420 123 456 789</p>
-                    <p class="text-18"><img src="img/email.png" alt="">E-mail:<br>info@stepandudycha.cz</p>
+                    <p class="text-18"><img class="email" src="img/email.png" alt="">E-mail:<br>info@stepandudycha.cz</p>
                 </div>
                 <div class="kontakt-form">
-                    <form action="" class="form">
+                    <form class="form">
                         <h2>Napište mi:</h2>
                         <input type="text" placeholder="Jméno">
                         <input type="text" placeholder="Příjmení">
                         <input type="email" placeholder="E-m@il">
-                        <textarea name="" cols="30" rows="4" placeholder="Zpráva:"></textarea>
-                        <input type="submit" value="ODESLAT" href="#kontakt">
+                        <textarea cols="30" rows="4" placeholder="Zpráva:"></textarea>
+                        <input type="submit" value="ODESLAT">
                     </form>
                 </div>
             </div>
