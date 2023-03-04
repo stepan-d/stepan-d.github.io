@@ -6,6 +6,9 @@
 }
 
 /***** REUSABLE *****/
+    html {
+        scroll-behavior: smooth;
+    }
     body {
         background-color: #163C40;
     }
@@ -23,12 +26,15 @@
 header {
     background: linear-gradient(#163c4099,#163c40b3), url("../img/pc-setup.jpg");
     background-size: cover;
-    height: 100svh;
+    height: 950px;
     background-attachment: fixed;
 }
 
 .header-con {
     display: flex;
+}
+.icon {
+   color: #FEFBE9;
 }
 
 /***** TEXT *****/
@@ -92,6 +98,9 @@ header {
     }
     #kontakt-btn {
         font-weight: bold;
+        background-color: #F0A04B;
+        padding: 5% 15%;
+        border-radius: 30px;
     }
 
 
@@ -312,7 +321,7 @@ header {
 
 /*=== FOOTER ===================================================================*/
 footer {
-    height: 10svh;
+    height: 60px;
     background-color: #FEFBE9;
 }
 footer p {
