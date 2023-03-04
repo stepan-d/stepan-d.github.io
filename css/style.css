@@ -24,7 +24,7 @@
 
 /*=== HEADER ===================================================================*/
 header {
-    background: linear-gradient(#163c4099,#163c40b3), url("../img/pc-setup.jpg");
+    background: linear-gradient(#163c4099,#163c40b3), url("../img/pc-setup.webp");
     background-size: cover;
     height: 950px;
     background-attachment: fixed;
